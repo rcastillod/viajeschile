@@ -16,7 +16,77 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <title>Viajes Chile</title>
 </head>
-<body>
+<body class="viajeschile">
+
+    <header class="header">
+        <div class="container">
+            <nav class="viajeschile-navbar navbar navbar-expand-lg">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="/assets/img/viajes.svg" alt="Logo Viajes Chile" width="50">
+                    <span class="text-white">Viajes Chile</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Quiénes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Destacados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="hero-section">
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/assets/img/carousel1x1000.jpg" class="d-block w-100" alt="Alpacas en desierto">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/img/carousel2x1000.jpg" class="d-block w-100" alt="Moais Isla de Pascua">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/img/carousel3x1000.jpg" class="d-block w-100" alt="Pinguino  de Magallanes">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <section class="about">
+            <div class="container">
+                <div class="row">
+                    
+                </div>
+            </div>
+        </section>
+
+    </main>
     
     <!--  Bootstrap Script  -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
