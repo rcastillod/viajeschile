@@ -54,6 +54,7 @@ section {
 }
 
 section {
+    overflow: hidden;
     padding-block: 6.25rem;
 }
 
@@ -282,4 +283,53 @@ section {
 /* CONTACT */
 .contact {
     background-color: hsl(var(--primary-color-shade));
+}
+
+@media ( min-width: 992px ) {
+    .contact .inner-section {
+        margin-inline: auto;
+        width: 50%;
+    }
+}
+
+/* FORM */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    background-color: hsl(var(--primary-color-shade));
+    border-color: hsl(var(--primary-color-tint));
+    border-radius: var(--br);
+    color: var(--text-color);
+    padding-block: .625rem;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form input[type="tel"]:focus,
+.contact-form textarea:focus {
+    background-color: hsl(var(--primary-color-shade));
+    border-color: hsl(var(--secondary-color));
+    box-shadow: none;
+    color: var(--text-color);
+}
+
+.contact-form textarea {
+    height: 9.375rem;
+    resize: none;
+}
+
+.contact-form .btn {
+    background-color: hsl(var(--secondary-color));
+    border-radius: var(--br);
+    box-shadow: 0 5px 15px 0 hsl(var(--secondary-color) / .5);
+    color: var(--text-color);
+    padding-inline: 3.125rem;
+    transition: all .3s ease-in-out;
+}
+
+.contact-form .btn:hover,
+.contact-form .btn:focus {
+    box-shadow: 0 10px 25px 0 hsl(var(--secondary-color) / .3);
+    color: var(--text-color);
 }
