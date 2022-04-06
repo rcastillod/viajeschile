@@ -19,6 +19,9 @@
     --fw-regular: 400;
     --fw-medium: 400;
 
+    /* Border */
+    --br: 1.25rem;
+
 }
 
 /* -------------------------------------------------------------------------- */
@@ -30,6 +33,13 @@ body.viajeschile {
     color: hsl(var(--text-color));
     font-family: var(--primary-font);
     font-weight: var(--fw-light);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--secondary-font);
 }
 
 img,
@@ -50,6 +60,43 @@ main {
     left: 0;
     width: 100%;
     z-index: 2;
+}
+
+/* Section Title */
+.title__heading {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    gap: 1.25rem;
+    font-size: 3.125rem;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+@media ( min-width: 768px ) {
+    .title__heading {
+        grid-template-columns: repeat(2, auto);
+        place-items: center;
+    }
+}
+
+.title__heading::after {
+    content: '';
+    background-color: hsl(var(--secondary-color));
+    height: 2px;
+    width: 25px;
+}
+
+.title__text {
+    margin: 0;
+    max-width: 50ch;
+    padding-block-start: 1.25rem;
+}
+
+@media ( min-width: 768px ) {
+    .title__text {
+        padding-inline-start: 1.25rem;
+    }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -97,8 +144,51 @@ main {
     z-index: 2;
 }
 
-/* About */
+/* ABOUT */
 .about {
     background-color: hsl(var(--primary-color));
     padding-block: 6.25rem;
+}
+
+.inner-section {
+    padding-block-start: 4.375rem;
+}
+
+.card-wrapper:not(:last-child) {
+    margin-block-end: 1.875rem;
+}
+
+@media (min-width: 768px) {
+    .card-wrapper:nth-child(2) {
+        margin-block-start: 1.875rem;
+    }
+
+    .card-wrapper:nth-child(3) {
+        margin-block-start: 3.75rem;
+    }
+}
+
+.card-wrapper .custom-card {
+    background-color: hsl(var(--primary-color-shade));
+    border-color: hsl(var(--primary-color-tint));
+    border-radius: var(--br);
+    padding: 2.5rem 1.875rem;
+}
+
+.custom-card .card-icon {
+    background-color: hsl(var(--secondary-color));
+    border-radius: 2.1875rem;
+    box-shadow: 0 5px 15px 0 hsl(var(--secondary-color) / .5);
+    margin-bottom: 1.25rem;
+    padding-block: .3125rem;
+    text-align: center;
+}
+
+.custom-card .card-icon i {
+    font-size: 1.5625rem;
+}
+
+.custom-card .card-text {
+    letter-spacing: .0313rem;
+    line-height: 1.7;
 }
