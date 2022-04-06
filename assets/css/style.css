@@ -48,7 +48,8 @@ picture {
     display: block;
 }
 
-main {
+main,
+section {
     position: relative;
 }
 
@@ -112,6 +113,36 @@ section {
         padding-block-start: 0;
         padding-inline-start: 1.25rem;
     }
+}
+
+/* Mesh Gradient Element */
+.mesh-wrapper {
+    position: absolute;
+    top: 130px;
+    left: -10px;
+    z-index: 0;
+}
+
+.mesh-element {
+    height: 20rem;
+    width: 24rem;
+    filter: blur(64px);
+    mix-blend-mode: multiply;
+    border-radius: 50%;
+    opacity: .2;
+}
+
+.mesh-element:nth-child(1) {
+    background-color: hsl(var(--secondary-color) / .9 );
+    z-index: 2;
+}
+
+.mesh-element:nth-child(2) {
+    background-color: #190f49;
+    margin-top: -110px;
+    margin-left: 100px;
+    opacity: .5;
+    z-index: 0;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -181,6 +212,11 @@ section {
     border-radius: var(--br);
     box-shadow: 15px 25px 40px 0 hsl(var(--primary-color-shade) / .8);
     padding: 2.5rem 1.875rem;
+}
+
+.card-wrapper .custom-card {
+    background-color: hsl(var(--primary-color-shade) / .4 );
+    backdrop-filter: blur(40px);
 }
 
 .custom-card .card-icon {
