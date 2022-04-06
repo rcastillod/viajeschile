@@ -114,6 +114,36 @@ section {
     }
 }
 
+/* Mesh Gradient Element */
+.mesh-wrapper {
+    position: absolute;
+    top: 130px;
+    left: -90px;
+    z-index: 0;
+}
+
+.mesh-element {
+    height: 20rem;
+    width: 24rem;
+    filter: blur(64px);
+    mix-blend-mode: multiply;
+    border-radius: 50%;
+    opacity: .2;
+}
+
+.mesh-element:nth-child(1) {
+    background-color: hsl(var(--secondary-color) / .9 );
+    z-index: 2;
+}
+
+.mesh-element:nth-child(2) {
+    background-color: #190f49;
+    margin-top: -110px;
+    margin-left: 100px;
+    opacity: .5;
+    z-index: 0;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                 COMPONENTS                                 */
 /* -------------------------------------------------------------------------- */
