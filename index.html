@@ -23,10 +23,10 @@
         <div class="container">
             <nav class="viajeschile-navbar navbar navbar-expand-lg">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <img src="/assets/img/viajes.svg" alt="Logo Viajes Chile" width="50">
+                    <img src="assets/img/viajes.svg" alt="Logo Viajes Chile" width="50">
                     <span class="text-white">Viajes Chile</span>
                 </a>
-                <button class="navbar-toggler viajes-navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                <button id="navToggler" class="navbar-toggler viajes-navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarViajesChile" aria-controls="navbarViajesChile"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -56,7 +56,7 @@
         <div id="hero" class="hero-section">
             <div id="heroCarousel" class="carousel hero-carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active" style="background-image:url('/assets/img/carousel1x1000.jpg')">
+                    <div class="carousel-item active" style="background-image:url('assets/img/carousel1x1000.jpg')">
                         <div class="carousel-content-wrapper">
                             <div class="carousel-content text-center">
                                 <h2 class="carousel-content__title">Lorem Ipsum</h2>
@@ -65,7 +65,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item" style="background-image:url('/assets/img/carousel2x1000.jpg')">
+                    <div class="carousel-item" style="background-image:url('assets/img/carousel2x1000.jpg')">
                         <div class="carousel-content-wrapper">
                             <div class="carousel-content text-center">
                                 <h2 class="carousel-content__title">Lorem Ipsum</h2>
@@ -74,7 +74,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item" style="background-image:url('/assets/img/carousel3x1000.jpg')">
+                    <div class="carousel-item" style="background-image:url('assets/img/carousel3x1000.jpg')">
                         <div class="carousel-content-wrapper">
                             <div class="carousel-content text-center">
                                 <h2 class="carousel-content__title">Lorem Ipsum</h2>
@@ -233,15 +233,15 @@
                     <form action="" class="contact-form">
                         <div class="row mb-4">
                             <div class="col-12 col-md-6 mb-4 mb-md-0">
-                                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
                             </div>
                             <div class="col-12 col-md-6">
-                                <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                                <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" required>
                             </div>
                         </div>
                         <div class="row mb-4">
                             <div class="col-12 col-md-6 mb-4 mb-md-0">
-                                <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                                <input type="email" class="form-control" placeholder="Email" aria-label="Email" required>
                             </div>
                             <div class="col-12 col-md-6">
                                 <input type="tel" class="form-control" placeholder="Teléfono" aria-label="Teléfono">
@@ -249,7 +249,7 @@
                         </div>
                         <div class="row mb-4">
                             <div class="col-12">
-                                <textarea class="form-control" placeholder="Escríbenos tu mensaje"></textarea>
+                                <textarea class="form-control" placeholder="Escríbenos tu mensaje" required></textarea>
                             </div>
                         </div>
                         <div class="row">
