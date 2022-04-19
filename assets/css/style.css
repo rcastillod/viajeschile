@@ -33,7 +33,7 @@ body.viajeschile {
     color: hsl(var(--text-color));
     font-family: var(--primary-font);
     font-weight: var(--fw-light);
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
 }
 
 h1,
@@ -275,7 +275,7 @@ section {
 }
 
 .carousel-content .carousel-content__title {
-    font-size: clamp(3.125rem, 10vw, 4.625rem);
+    font-size: clamp(2.5rem, 10vw, 4.625rem);
 }
 
 .carousel-content .carousel-content__subtitle {
